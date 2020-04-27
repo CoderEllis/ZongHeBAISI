@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.8.2)
+  - HandyJSON (4.2.1)
+  - Kingfisher (5.3.1)
+  - MJRefresh (3.1.16)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - pop (1.0.12)
+  - Result (4.1.0)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON (~> 4.2.1)
+  - Kingfisher
+  - MJRefresh
+  - Moya
+  - pop
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - HandyJSON
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - pop
+    - Result
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: eab13d881922f0b9761b92f000a30e6f0f662be1
+
+COCOAPODS: 1.5.3
