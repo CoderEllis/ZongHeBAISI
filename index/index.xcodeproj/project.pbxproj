@@ -18,7 +18,6 @@
 		1619105C22DB17C1003575BE /* UITabBarController+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619104B22DB17C1003575BE /* UITabBarController+Rotation.swift */; };
 		1619105D22DB17C1003575BE /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619104C22DB17C1003575BE /* NibLoadable.swift */; };
 		1619105E22DB17C1003575BE /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619104D22DB17C1003575BE /* UILable+Extension.swift */; };
-		1619106222DB17C1003575BE /* 33.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1619105122DB17C1003575BE /* 33.mp4 */; };
 		1619106422DB17C1003575BE /* DeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1619105322DB17C1003575BE /* DeviceTool.m */; };
 		1619106D22DB1E67003575BE /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619106C22DB1E67003575BE /* UIImage+Extension.swift */; };
 		1619107522DB2537003575BE /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619107422DB2537003575BE /* VideoPlayerController.swift */; };
@@ -170,7 +169,6 @@
 		1619104B22DB17C1003575BE /* UITabBarController+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Rotation.swift"; sourceTree = "<group>"; };
 		1619104C22DB17C1003575BE /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		1619104D22DB17C1003575BE /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
-		1619105122DB17C1003575BE /* 33.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 33.mp4; sourceTree = "<group>"; };
 		1619105322DB17C1003575BE /* DeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTool.m; sourceTree = "<group>"; };
 		1619106C22DB1E67003575BE /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		1619106E22DB2066003575BE /* VideoPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -344,7 +342,6 @@
 				1687CF9D22EA13CB008139EC /* ELVideoModel.swift */,
 				1619104422DB17C1003575BE /* DeviceTool.h */,
 				1619105322DB17C1003575BE /* DeviceTool.m */,
-				1619105122DB17C1003575BE /* 33.mp4 */,
 			);
 			path = ELPlayer;
 			sourceTree = "<group>";
@@ -1186,7 +1183,6 @@
 				16FA86B1229935280034D8BF /* LaunchScreen.storyboard in Resources */,
 				16FA86AE229935280034D8BF /* Assets.xcassets in Resources */,
 				16FA8709229C57200034D8BF /* ELMeViewController.storyboard in Resources */,
-				1619106222DB17C1003575BE /* 33.mp4 in Resources */,
 				16FA86AC229935250034D8BF /* Main.storyboard in Resources */,
 				1687D06722EC837E008139EC /* Resource.bundle in Resources */,
 				1687D08922EDC19E008139EC /* IQKeyboardManager.bundle in Resources */,
