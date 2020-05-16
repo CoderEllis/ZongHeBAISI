@@ -66,6 +66,7 @@
 		163C1CEB23688BAB00A11F55 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C1CE823688BAB00A11F55 /* EncryptionTools.m */; };
 		164038B02338BD340047881E /* AFNprotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164038AF2338BD340047881E /* AFNprotocol.swift */; };
 		1643B926246EB52400AC9E10 /* PersonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643B925246EB52400AC9E10 /* PersonDetailVC.swift */; };
+		1643B9282470149600AC9E10 /* PersonDetailVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643B9272470149600AC9E10 /* PersonDetailVC2.swift */; };
 		165BB7E222A10F5500967736 /* ELFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E122A10F5500967736 /* ELFastButton.swift */; };
 		165BB7E422A1902700967736 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E322A1902700967736 /* UITextField+Placeholder.swift */; };
 		165BB7E622A19B5D00967736 /* ELLoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E522A19B5D00967736 /* ELLoginField.swift */; };
@@ -222,6 +223,7 @@
 		163C1CE823688BAB00A11F55 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
 		164038AF2338BD340047881E /* AFNprotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNprotocol.swift; sourceTree = "<group>"; };
 		1643B925246EB52400AC9E10 /* PersonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailVC.swift; sourceTree = "<group>"; };
+		1643B9272470149600AC9E10 /* PersonDetailVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailVC2.swift; sourceTree = "<group>"; };
 		165BB7E122A10F5500967736 /* ELFastButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFastButton.swift; sourceTree = "<group>"; };
 		165BB7E322A1902700967736 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		165BB7E522A19B5D00967736 /* ELLoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLoginField.swift; sourceTree = "<group>"; };
@@ -564,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				1643B925246EB52400AC9E10 /* PersonDetailVC.swift */,
+				1643B9272470149600AC9E10 /* PersonDetailVC2.swift */,
 			);
 			path = PersonDetail;
 			sourceTree = "<group>";
@@ -1356,6 +1359,7 @@
 				1687D08D22EDC19E008139EC /* IQUIViewController+Additions.swift in Sources */,
 				16FA8707229C57150034D8BF /* ELMeViewController.swift in Sources */,
 				1625A9FE22D0B2740089554A /* tabTopicListCell.swift in Sources */,
+				1643B9282470149600AC9E10 /* PersonDetailVC2.swift in Sources */,
 				1643B926246EB52400AC9E10 /* PersonDetailVC.swift in Sources */,
 				1687D08E22EDC19E008139EC /* IQUITextFieldView+Additions.swift in Sources */,
 				163BD94722EF101F00789ACA /* VideoListController.swift in Sources */,
