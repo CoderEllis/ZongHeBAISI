@@ -11,7 +11,7 @@ import UIKit
 class VideoListViewModel: NSObject {
     //video 数组
     
-    var videoArr: [DemoVideo] = []
+    var videoArr: [DemoVideoModel] = []
     
     //初始化数组
     func setupData(success : () -> ()) {
@@ -25,7 +25,7 @@ class VideoListViewModel: NSObject {
             
             let dataArray = dataDict["data"] as! Array<[String : Any]>
             for dict in dataArray {
-                let video = DemoVideo(dict: dict)
+                let video = DemoVideoModel(dict: dict)
                 videoArr.append(video)
             }
             success()

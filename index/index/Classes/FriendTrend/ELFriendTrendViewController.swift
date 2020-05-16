@@ -74,6 +74,7 @@ class ELFriendTrendViewController: UIViewController {
         testField.textColor = UIColor.yellow
         testField.borderStyle = .roundedRect
         testField.placeholder = "runtime交换颜色测试"
+        testField.placeholderColor = UIColor.green
         testField.font = UIFont.systemFont(ofSize: 14)
         return testField
     }()
@@ -82,7 +83,7 @@ class ELFriendTrendViewController: UIViewController {
     
     lazy var testLabel : UILabel = {
         let testLabel = UILabel()
-        testLabel.text = "快快登录吧, 关注百思最in牛人\n好友动态让你过吧瘾儿~ \n欧耶~~~~!"
+        testLabel.text = "快快登录吧, 关注最in牛人\n好友动态让你过吧瘾儿~ \n欧耶~~~~!"
         testLabel.font = UIFont.systemFont(ofSize: 17)
         testLabel.textColor = UIColor.black
         testLabel.numberOfLines = 0

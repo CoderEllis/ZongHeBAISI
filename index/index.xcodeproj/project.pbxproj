@@ -46,7 +46,7 @@
 		163BD95322EF103D00789ACA /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95222EF103D00789ACA /* VideoListViewModel.swift */; };
 		163BD95722EF113600789ACA /* ConfigFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95522EF113600789ACA /* ConfigFile.swift */; };
 		163BD95822EF113700789ACA /* video in Resources */ = {isa = PBXBuildFile; fileRef = 163BD95622EF113600789ACA /* video */; };
-		163BD96822EF118200789ACA /* DemoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95B22EF118200789ACA /* DemoVideo.swift */; };
+		163BD96822EF118200789ACA /* DemoVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95B22EF118200789ACA /* DemoVideoModel.swift */; };
 		163BD96922EF118200789ACA /* VideoRecommendMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95E22EF118200789ACA /* VideoRecommendMediaCell.swift */; };
 		163BD96A22EF118200789ACA /* VideoAllCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD95F22EF118200789ACA /* VideoAllCommentCell.swift */; };
 		163BD96B22EF118200789ACA /* VideoSelectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BD96022EF118200789ACA /* VideoSelectionsCell.swift */; };
@@ -65,6 +65,7 @@
 		163C1CEA23688BAB00A11F55 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C1CE623688BAB00A11F55 /* RSACryptor.m */; };
 		163C1CEB23688BAB00A11F55 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C1CE823688BAB00A11F55 /* EncryptionTools.m */; };
 		164038B02338BD340047881E /* AFNprotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164038AF2338BD340047881E /* AFNprotocol.swift */; };
+		1643B926246EB52400AC9E10 /* PersonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643B925246EB52400AC9E10 /* PersonDetailVC.swift */; };
 		165BB7E222A10F5500967736 /* ELFastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E122A10F5500967736 /* ELFastButton.swift */; };
 		165BB7E422A1902700967736 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E322A1902700967736 /* UITextField+Placeholder.swift */; };
 		165BB7E622A19B5D00967736 /* ELLoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BB7E522A19B5D00967736 /* ELLoginField.swift */; };
@@ -198,7 +199,7 @@
 		163BD95222EF103D00789ACA /* VideoListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
 		163BD95522EF113600789ACA /* ConfigFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigFile.swift; sourceTree = "<group>"; };
 		163BD95622EF113600789ACA /* video */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video; sourceTree = "<group>"; };
-		163BD95B22EF118200789ACA /* DemoVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoVideo.swift; sourceTree = "<group>"; };
+		163BD95B22EF118200789ACA /* DemoVideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoVideoModel.swift; sourceTree = "<group>"; };
 		163BD95E22EF118200789ACA /* VideoRecommendMediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecommendMediaCell.swift; sourceTree = "<group>"; };
 		163BD95F22EF118200789ACA /* VideoAllCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAllCommentCell.swift; sourceTree = "<group>"; };
 		163BD96022EF118200789ACA /* VideoSelectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSelectionsCell.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 		163C1CE723688BAB00A11F55 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
 		163C1CE823688BAB00A11F55 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
 		164038AF2338BD340047881E /* AFNprotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNprotocol.swift; sourceTree = "<group>"; };
+		1643B925246EB52400AC9E10 /* PersonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailVC.swift; sourceTree = "<group>"; };
 		165BB7E122A10F5500967736 /* ELFastButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFastButton.swift; sourceTree = "<group>"; };
 		165BB7E322A1902700967736 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		165BB7E522A19B5D00967736 /* ELLoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLoginField.swift; sourceTree = "<group>"; };
@@ -494,7 +496,7 @@
 		163BD95A22EF118200789ACA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				163BD95B22EF118200789ACA /* DemoVideo.swift */,
+				163BD95B22EF118200789ACA /* DemoVideoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -556,6 +558,14 @@
 				163C1CE623688BAB00A11F55 /* RSACryptor.m */,
 			);
 			name = MD5;
+			sourceTree = "<group>";
+		};
+		1643B924246EB4EF00AC9E10 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1643B925246EB52400AC9E10 /* PersonDetailVC.swift */,
+			);
+			path = PersonDetail;
 			sourceTree = "<group>";
 		};
 		165BB7E722A2E1B200967736 /* Follow */ = {
@@ -771,6 +781,7 @@
 		16FA86B8229936610034D8BF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1643B924246EB4EF00AC9E10 /* PersonDetail */,
 				163BD94422EF0FE300789ACA /* TestDemo */,
 				1687D09122EDC43A008139EC /* AD */,
 				16FA86B9229936720034D8BF /* Essence */,
@@ -1258,7 +1269,7 @@
 				1687D08622EDC19E008139EC /* IQInvocation.swift in Sources */,
 				165BB80B22AD90B800967736 /* ELTopicPictureView.swift in Sources */,
 				1624F2E622B8B45A004676F1 /* ELTagBtn.swift in Sources */,
-				163BD96822EF118200789ACA /* DemoVideo.swift in Sources */,
+				163BD96822EF118200789ACA /* DemoVideoModel.swift in Sources */,
 				1619107522DB2537003575BE /* VideoPlayerController.swift in Sources */,
 				16FA871C22A0133C0034D8BF /* ELLoginRegisterViewController.swift in Sources */,
 				1619105B22DB17C1003575BE /* UINavigationController+Rotation.swift in Sources */,
@@ -1345,6 +1356,7 @@
 				1687D08D22EDC19E008139EC /* IQUIViewController+Additions.swift in Sources */,
 				16FA8707229C57150034D8BF /* ELMeViewController.swift in Sources */,
 				1625A9FE22D0B2740089554A /* tabTopicListCell.swift in Sources */,
+				1643B926246EB52400AC9E10 /* PersonDetailVC.swift in Sources */,
 				1687D08E22EDC19E008139EC /* IQUITextFieldView+Additions.swift in Sources */,
 				163BD94722EF101F00789ACA /* VideoListController.swift in Sources */,
 				16FA8713229C6B640034D8BF /* ELSquareItem.swift in Sources */,

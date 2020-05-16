@@ -9,7 +9,7 @@
 import UIKit
 
 class VideoController: UIViewController {
-    var video: DemoVideo?
+    var video: DemoVideoModel?
     var playerView : ELPlayerView?
     
     ///重写横盘旋转 应该旋转
@@ -18,7 +18,7 @@ class VideoController: UIViewController {
     }
     
     deinit {
-        print("VideoController deinit")
+        printLog("VideoController deinit")
     }
     
     
@@ -100,7 +100,8 @@ class VideoController: UIViewController {
     
     
     func setPlayerView() {
-        playerView = ELPlayerView.shared.initWithFrame(CGRect(x: 0, y: statusBarHeight, width: ScreenWidth, height: PlayerViewHeight), videoUrl: (video?.play_address)!)
+//        playerView = ELPlayerView.shared.initWithFrame(CGRect(x: 0, y: statusBarHeight, width: ScreenWidth, height: PlayerViewHeight), videoUrl: (video?.play_address)!)
+        playerView = ELPlayerView(CGRect(x: 0, y: statusBarHeight, width: ScreenWidth, height: PlayerViewHeight), videoUrl: (video?.play_address)!)
         playerView?.delegate = self
         view.addSubview(playerView!)
     }

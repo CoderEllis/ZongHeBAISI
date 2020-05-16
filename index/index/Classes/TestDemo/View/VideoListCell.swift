@@ -14,7 +14,7 @@ import UIKit
 
 class VideoListCell: UITableViewCell {
     
-    var video : DemoVideo? {
+    var video : DemoVideoModel? {
         didSet {
             guard let video = video else {
                 return

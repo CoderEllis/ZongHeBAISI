@@ -51,7 +51,8 @@ class VideoPlayerController: UIViewController {
             topHeight = 44
         }
         
-        playerView = ELPlayerView.shared.initWithFrame(CGRect(x: 0, y: topHeight, width: ScreenWidth, height: height), videoUrl: urlString)
+//        playerView = ELPlayerView.shared.initWithFrame(CGRect(x: 0, y: topHeight, width: ScreenWidth, height: height), videoUrl: urlString)
+        playerView = ELPlayerView(CGRect(x: 0, y: topHeight, width: ScreenWidth, height: height), videoUrl: urlString)
         playerView?.delegate = self
         view.addSubview(playerView!)
         

@@ -235,16 +235,16 @@ class ELTopicViewController: UITableViewController {
 //        }
         
         
-        let type = modelUser?.list[indexPath.row].type
-        
-        if type == .video {
-            let tableVideo = VideoPlayerController((modelUser?.list[indexPath.row].videouri!)!, size: CGSize(width: modelUser?.list[indexPath.row].width?.int ?? 0, height: modelUser?.list[indexPath.row].height?.int ?? 0))
-            tableVideo.view.backgroundColor = UIColor.orange
-            navigationController?.pushViewController(tableVideo, animated: true)
-        } else if type == .voice {
-            let tableVideo = VideoPlayerController((modelUser?.list[indexPath.row].voiceuri!)!, size: CGSize(width: modelUser?.list[indexPath.row].width?.int ?? 0, height: modelUser?.list[indexPath.row].height?.int ?? 0))
-            tableVideo.view.backgroundColor = UIColor.white
-            navigationController?.pushViewController(tableVideo, animated: true)
+        if let type = modelUser?.list[indexPath.row].type {
+            if type == .video {
+                let tableVideo = VideoPlayerController((modelUser?.list[indexPath.row].videouri!)!, size: CGSize(width: modelUser?.list[indexPath.row].width?.int ?? 0, height: modelUser?.list[indexPath.row].height?.int ?? 0))
+                tableVideo.view.backgroundColor = UIColor.orange
+                navigationController?.pushViewController(tableVideo, animated: true)
+            } else if type == .voice {
+                let tableVideo = VideoPlayerController((modelUser?.list[indexPath.row].voiceuri!)!, size: CGSize(width: modelUser?.list[indexPath.row].width?.int ?? 0, height: modelUser?.list[indexPath.row].height?.int ?? 0))
+                tableVideo.view.backgroundColor = UIColor.white
+                navigationController?.pushViewController(tableVideo, animated: true)
+            }
         }
         
         

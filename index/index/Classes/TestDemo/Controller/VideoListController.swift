@@ -53,7 +53,7 @@ class VideoListController: UIViewController {
     
     
     deinit {
-        print("videoListController deinit")
+        printLog("videoListController--------deinit")
     }
 
     func setUI() {
@@ -64,7 +64,7 @@ class VideoListController: UIViewController {
         view.addSubview(coverView)
         view.addSubview(tableView)
         
-        logoView.center = imageView.center
+//        logoView.center = imageView.center
     }
     
     func refreshData() {
@@ -96,6 +96,8 @@ class VideoListController: UIViewController {
     lazy var imageView : UIImageView =  {
        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ImageViewHeight))
         imageView.image = UIImage(named: "list_header")
+//        imageView.contentMode = .scaleToFill
+//        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -103,8 +105,7 @@ class VideoListController: UIViewController {
     
     lazy var coverView : UIView =  {
         let coverView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ImageViewHeight))
-//        coverView.backgroundColor = RGB(r: 0x00, g: 0x00, b: 0x00, alpha: 0)
-        coverView.backgroundColor = UIColor.green
+        coverView.backgroundColor = RGB(r: 0x00, g: 0x00, b: 0x00, alpha: 0)
         return coverView
     }()
     
@@ -152,12 +153,13 @@ extension VideoListController: UITableViewDelegate, UITableViewDataSource {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
+        printLog(offsetY)
         if offsetY < 0  {
             let height = ImageViewHeight-scrollView.contentOffset.y
             let width = ScreenWidth*(1+(-offsetY)/ImageViewHeight)
             let x = -(width-ScreenWidth)/2
-            let frame = CGRect(x: x, y: 0, width: width, height: height)
-            imageView.frame = frame
+            imageView.frame = CGRect(x: x, y: 0, width: width, height: height)
+            imageView.clipsToBounds = true
             logoView.center = imageView.center
             activityIndicator.y = imageView.height - 25
             coverView.backgroundColor = RGB(r: 0x00, g: 0x00, b: 0x00, alpha: 0)
@@ -165,11 +167,14 @@ extension VideoListController: UITableViewDelegate, UITableViewDataSource {
                 refreshData()
             }
         } else if offsetY >= 0 {
+            imageView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: ImageViewHeight)
             let alpha = offsetY/ImageViewHeight
             coverView.backgroundColor = RGB(r: 0x00, g: 0x00, b: 0x00, alpha: alpha*0.9)
             if offsetY >= ImageViewHeight {
+//                navigationController?.isNavigationBarHidden = false
                 style = .default
             } else {
+                
                 style = .lightContent
             }
             

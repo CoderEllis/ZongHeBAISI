@@ -102,7 +102,8 @@ class ELPlayerView: UIView {
     private var isIntoBg : Bool = false
     
     /// 创建播放器单例
-    static let shared = ELPlayerView()
+//    static let shared = ELPlayerView()
+    
     
     
     var video : ELVideoModel? {
@@ -115,10 +116,32 @@ class ELPlayerView: UIView {
     ///保存最初frame初始值
     private var makeFrame : CGRect!
     
-    private override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
+//    private override init(frame: CGRect) {
+//        super.init(frame: frame)
+//    }
     
+    init(_ frame: CGRect, videoUrl: String) {
+        //强制全屏打开
+        let appde = UIApplication.shared.delegate as! AppDelegate
+        appde.allowRotation = true
+        super.init(frame: frame)
+        backgroundColor = UIColor.black
+        makeFrame = frame
+        isFisrtConfig = true
+        isFullScreen = false
+        isLocked = false
+        // 监听事件 屏幕旋转监听 后台
+        addNotifications()
+        topTool.isFull = false
+        bottomTool.isFull = false
+        playWithUrl(videoUrl)
+        DelayOperation()// 隐藏界面
+        //布局和手势
+        setupUI()
+        
+        //获取系统音量
+        creatVolumeView()
+    }
     
     func initWithFrame(_ frame:CGRect,videoUrl:String) -> ELPlayerView {
         self.backgroundColor = UIColor.black

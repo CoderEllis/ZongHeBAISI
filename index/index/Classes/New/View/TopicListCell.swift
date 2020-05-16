@@ -34,13 +34,14 @@ class TopicListCell: UICollectionViewCell {
         let tabbleView = UITableView()
         tabbleView.frame = bounds
         tabbleView.dataSource = self
+        tabbleView.delegate = self
         tabbleView.register(tabTopicListCell.self, forCellReuseIdentifier: TopicListCellID)
         return tabbleView
     }()
     
 }
 
-extension TopicListCell : UITableViewDataSource {
+extension TopicListCell : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -53,7 +54,9 @@ extension TopicListCell : UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
+    }
     
     
 }

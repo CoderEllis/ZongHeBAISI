@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DemoVideo: ELVideoModel {
+class DemoVideoModel: ELVideoModel {
     
     //    var play_address: String?
     //    

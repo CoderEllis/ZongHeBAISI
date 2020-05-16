@@ -98,8 +98,10 @@ class ELEssenceViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(itemWithimage: "nav_item_game_icon", highImage: "nav_item_game_click_icon", target: self, ation: #selector(leftClick))
         let testItem = UIBarButtonItem(itemWithimage: "navigationButtonRandom", highImage: "navigationButtonRandomClick", target: self, ation: #selector(rightClick))
         let QRcodeItem = UIBarButtonItem(itemWithimage: "navigationbar_pop", highImage: "navigationbar_pop_highlighted", target: self, ation: #selector(QRcodeClick))
+        let personDetailVCTest = UIBarButtonItem(itemWithimage: "nav_coin_icon", highImage: "nav_coin_icon_click", target: self, ation: #selector(personDetailVcClick))
+        
         QRcodeItem.accessibilityIdentifier  = "123"
-        navigationItem.rightBarButtonItems = [testItem,QRcodeItem]
+        navigationItem.rightBarButtonItems = [testItem,QRcodeItem,personDetailVCTest]
         navigationItem.titleView = UIImageView(image: UIImage(named: "cell_like_in_my_music"))
     }
     
@@ -108,11 +110,6 @@ class ELEssenceViewController: UIViewController {
         vc.backgroundColor = UIColor(white: 0, alpha: 0.75)
         vc.dataArray = getArray()
         UIApplication.shared.keyWindow?.addSubview(vc)
-    }
-    
-    @objc func QRcodeClick() {
-        let scanQRCodeVC = ScanQRCodeVC()
-        navigationController?.pushViewController(scanQRCodeVC, animated: true)
     }
     
     private func getArray() -> [ELTopic] {
@@ -130,11 +127,21 @@ class ELEssenceViewController: UIViewController {
         return array
     }
     
+    @objc func QRcodeClick() {
+        let scanQRCodeVC = ScanQRCodeVC()
+        navigationController?.pushViewController(scanQRCodeVC, animated: true)
+    }
+    
     @objc func rightClick() {
 //        let tableVideo = VideoPlayerController("http://uvideo.spriteapp.cn/video/2019/0715/5d2c5d5d962d6_wpd.mp4")
         let tableVC = VideoListController()
         
         navigationController?.pushViewController(tableVC, animated: true)
+    }
+    
+    @objc func personDetailVcClick() {
+        let testVC = PersonDetailVC()
+        navigationController?.pushViewController(testVC, animated: true)
     }
     
     //点击标题按钮
