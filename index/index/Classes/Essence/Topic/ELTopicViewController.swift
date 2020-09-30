@@ -211,7 +211,7 @@ class ELTopicViewController: UITableViewController {
     
     // MARK: - Table view data Delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
+        printLog("\(indexPath.row)\((modelUser?.list[indexPath.row].array.cellHeight)!)")
         return (modelUser?.list[indexPath.row].array.cellHeight)!
 //        return viewModel[indexPath.row].array.cellHeight
     }
