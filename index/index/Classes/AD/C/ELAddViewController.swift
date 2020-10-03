@@ -32,8 +32,11 @@ class ELAddViewController: UIViewController {
         
         let signStr = SignUtil.init(datas: &params).signInfo()
         printLog(signStr)
-        printLog("123".sha12)
-        printLog("123".sha1())
+        
+        printLog("123".sha1)
+        printLog("123".crypto(type: .SHA1))
+        printLog("123".data(using: .utf8)!.sha1)
+        
     }
     
     

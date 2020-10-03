@@ -44,7 +44,6 @@
  @constant   kCCAlgorithmAES     高级加密标准，128位(默认)
  @constant   kCCAlgorithmDES     数据加密标准
  */
-@property (nonatomic, assign) uint32_t algorithm;
 
 /**
  *  加密字符串并返回base64编码字符串

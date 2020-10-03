@@ -16,7 +16,16 @@
     
     return [self stringFromBytes:buffer length:CC_MD5_DIGEST_LENGTH];
 }
-
++ ( NSString *)md5String:( NSString *)str {
+    const char *myPasswd = [str UTF8String ];
+    unsigned char mdc[16];
+    CC_MD5 (myPasswd, (CC_LONG)strlen(myPasswd), mdc);
+    NSMutableString *md5String = [ NSMutableString string ];
+    for ( int i = 0 ; i< 16 ; i++) {
+        [md5String appendFormat : @"%02x" ,mdc[i]];  
+    }
+    return md5String;
+}
 - (NSString *)sha1String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA1_DIGEST_LENGTH];

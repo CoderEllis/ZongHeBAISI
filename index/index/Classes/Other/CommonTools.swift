@@ -53,7 +53,7 @@ func randomColor() -> UIColor {
 
 ///16位颜色
 public extension UIColor {
-    public convenience init(colorHex : UInt32, alpha : CGFloat = 1.0) {
+    convenience init(colorHex : UInt32, alpha : CGFloat = 1.0) {
         let red = CGFloat((colorHex & 0xFF0000)   >> 16) / 255.0
         let green = CGFloat((colorHex & 0x00FF00) >> 8 ) / 255.0
         let blue = CGFloat((colorHex & 0x0000FF)       ) / 255.0

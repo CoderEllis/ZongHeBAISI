@@ -588,6 +588,8 @@ class ELPlayerView: UIView {
                 }
             }
             break
+        @unknown default:
+            break
         }
         
     }
@@ -1200,6 +1202,8 @@ extension ELPlayerView {
             case .unknown:
                 playerError = true
                 printLog("Unknown")
+            @unknown default: 
+                break
             }
             
         } else if keyPath == "playbackBufferEmpty" {

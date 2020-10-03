@@ -539,6 +539,8 @@ extension ScanQRCodeVC {
             comletion(false)
         case .authorized:
             comletion(true)
+        @unknown default:
+            fatalError()
         }
     }
     
